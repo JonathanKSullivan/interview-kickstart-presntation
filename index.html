@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Functional Programing in Python</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css" id="theme">
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1: Title Slide -->
+				<section style="position: relative; color: white; text-shadow: 2px 2px 4px #000000;">
+					<div style="position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+					<div style="position: relative; z-index: 2;">
+						<h2>Optimizing Fleet Management with Python:</h2>
+						<h4>A Hands-On Approach to Data Structures and Functional Programming</h4>  
+						<p><small>Presented by [Your Name]</small></p>
+						<p><small>[Presentation Date]</small></p>
+					</div>
+					<div style="background-image: url('assets/drones.webp'); background-size: cover; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;" data-transition="fade"></div>
+				</section>
+
+				<!-- Slide 2: Introduction -->
+				<section data-auto-animate>
+					<h3>Welcome & Introduction</h3>
+					<p>Welcome to our course on optimizing fleet management with Python. This session will dive into how Python's data structures and functional programming can revolutionize the way we manage and optimize fleet operations.</p>
+					<ul>
+						<li data-auto-animate-target="1">Understand Python data structures for fleet management.</li>
+						<li data-auto-animate-target="2">Master functional programming concepts.</li>
+						<li data-auto-animate-target="3">Apply Python skills to solve real-world problems.</li>
+					</ul>
+				</section>
+
+				<!-- Slide 3: Engagement Poll -->
+				<section data-transition="convex">
+					<h3>Let's Get to Know Each Other!</h3>
+					<p>How familiar are you with Python's data structures and functional programming?</p>
+					<div class="poll-placeholder" style="margin-top: 20px; text-align: center;">
+						<!-- Direct link to the poll for participants who prefer to use a link -->
+						<p>Access our interactive poll <a href="https://app.sli.do/event/aVzzrNQydkpLpeH7Y5FEdC" target="_blank">here</a> or scan the QR code below.</p>
+						<!-- QR Code Image for Slido Poll -->
+						<img src="assets/qr_poll.png" alt="QR Code" style="margin-top: 20px; width: 200px; height: 200px;">
+					</div>
+				</section>
+				
+
+				<!-- Slide 4: Objectives -->
+				<section style="position: relative; color: white;">
+					<div style="position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+					<div style="position: relative; z-index: 2;">
+						<h3>Overview of Fleet Management at EcoDeliver</h3>
+						<p>Exploring Python's pivotal role in optimizing eco-friendly delivery systems.</p>
+						<!-- Integrate zoom.js for live emphasis during the presentation -->
+						<p>Python streamlines fleet management through:</p>
+						<ul>
+							<li data-fragment-index="1">Efficient data structuring with tuples, sets, and dictionaries.</li>
+							<li data-fragment-index="2">Functional programming techniques for operational efficiency.</li>
+							<li data-fragment-index="3">Advanced route optimization algorithms.</li>
+						</ul>
+					</div>
+					<div style="background-image: url('assets/eco_drones.webp'); background-size: cover; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;"></div>
+				</section>
+				
+				<!-- Slide 5: Tuples, Sets and dictionary -->
+				<section>
+					<section data-auto-animate>
+						<h3>Understanding Python Data Structures</h3>
+						<p>Exploring the core data structures used in Python for efficient data management.</p>
+						<div class="fragment" data-fragment-index="1">
+							<h3>Tuples</h3>
+							<pre><code class="python" data-trim>
+					# Immutable and ordered
+					example_tuple = (1, 'Python', 3.14)
+							</code></pre>
+						</div>
+						<div class="fragment" data-fragment-index="2">
+							<h3>Sets</h3>
+							<pre><code class="python" data-trim>
+					# Unordered, unique items
+					example_set = {1, 2, 3, 4, 5}
+							</code></pre>
+						</div>
+					</section>
+
+					<section data-auto-animate>
+						<h3>Understanding Python Data Structures</h3>
+						<p>Exploring the core data structures used in Python for efficient data management.</p>
+						<div class="fade-in" data-fragment-index="3">
+							<h3>Dictionaries</h3>
+							<pre><code class="python" data-trim>
+					# Key-value pairs
+					example_dict = {'name': 'Python', 'type': 'Programming Language'}
+							</code></pre>
+						</div>
+						<div class="fragment" data-fragment-index="4">
+							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
+						</div>
+					</section>
+				</section>
+				
+				<!-- Slide 6: Map, Filter and Reduce -->
+				<section>
+					<!-- Map Function -->
+					<section data-auto-animate>
+						<h3>Functional Programming in Python</h3>
+        				<p>Diving into map, filter, and reduce for efficient data manipulation.</p>
+						<h4>map()</h4>
+						<p>Applies a function to all items in an input list.</p>
+						<pre><code class="python" data-trim>
+				# Example: Square numbers in a list
+				numbers = [1, 2, 3, 4]
+				squared = list(map(lambda x: x**2, numbers))
+				print(squared)
+						</code></pre>
+						<p class="fragment"><strong>Expected Output:</strong> [1, 4, 9, 16]</p>
+					</section>
+					
+					<!-- Filter Function -->
+					<section data-auto-animate>
+						<h3>Functional Programming in Python</h3>
+        				<p>Diving into map, filter, and reduce for efficient data manipulation.</p>
+						<h4>filter()</h4>
+						<p>Creates a list of elements for which a function returns true.</p>
+						<pre><code class="python" data-trim>
+				# Example: Filter even numbers
+				numbers = [1, 2, 3, 4, 5, 6]
+				even = list(filter(lambda x: x % 2 == 0, numbers))
+				print(even)
+						</code></pre>
+						<p class="fragment"><strong>Expected Output:</strong> [2, 4, 6]</p>
+					</section>
+
+					<!-- Reduce Function -->
+					<section data-auto-animate>
+						<h3>Functional Programming in Python</h3>
+        				<p>Diving into map, filter, and reduce for efficient data manipulation.</p>
+						<h4>reduce()</h4>
+						<p>Performs a computation on a sequence of values to reduce it to a single value.</p>
+						<pre><code class="python" data-trim>
+				# Example: Sum numbers in a list
+				from functools import reduce
+				numbers = [1, 2, 3, 4]
+				result = reduce(lambda x, y: x + y, numbers)
+				print(result)
+						</code></pre>
+						<p class="fragment"><strong>Expected Output:</strong> 10</p>
+						<div class="fragment">
+							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
+						</div>
+					</section>
+
+
+					<div class="fragment" data-fragment-index="4">
+							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
+						</div>
+				</section>
+
+				<!-- Slide 7: Route Optimization Challenge -->
+				<section>
+					<section>
+						<h2>Comprehensive Challenge: Optimizing Delivery Routes</h2>
+						<p>Integrate all learned concepts to optimize delivery routes for our drone fleet.</p>
+					</section>
+				</section>
+
+				<!-- Slide 8: Conclusion -->
+				<section data-transition="fade-out">
+					<h2>Conclusion & Key Takeaways</h2>
+					<ul>
+						<li class="fragment">Python's data structures.</li>
+						<li class="fragment">Functional programming.</li>
+						<li class="fragment">Real-world application.</li>
+					</ul>
+				</section>
+				
+
+				<!-- Slide 9: Q&A and Thanks -->
+				<section>
+					<h3>Q&A and Resources</h3>
+					<p>Have questions? Now's the time to ask!</p>
+					<p>For further study, check out these resources:</p>
+					<ul>
+						<li><a href="resource_link_here">Python Documentation</a></li>
+						<li><a href="resource_link_here">Functional Programming in Python</a></li>
+					</ul>
+					<hr>
+					<b>Thank You!</b>
+					<p>Your feedback is highly appreciated.</p>
+					<p>Contact me at <a href="mailto:jonathan.k.sullivan@gmail.com">Jonathan.K.Sullivan@gmail.com</a></p>
+					<small>Follow me on <a src="https://linkedin.com/in/jonathanksullivan">Linkedin</a></small>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				controls: true,
+				progress: true,
+				center: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
