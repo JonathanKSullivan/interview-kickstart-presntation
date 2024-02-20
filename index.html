@@ -27,6 +27,9 @@
 						<p><small>[Presentation Date]</small></p>
 					</div>
 					<div style="background-image: url('assets/drones.webp'); background-size: cover; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;" data-transition="fade"></div>
+					<aside class="notes">
+						Welcome, everyone, to our exploration of ‘Optimizing Fleet Management with Python.’ In this session, we delve into how Python’s data structures and functional programming can revolutionize fleet management, particularly focusing on the domain of electric delivery drones. I’m [Your Name], and I’ll be guiding you through these concepts, bridging theory with practical application.
+					</aside>
 				</section>
 
 				<!-- Slide 2: Introduction -->
@@ -38,6 +41,9 @@
 						<li data-auto-animate-target="2">Master functional programming concepts.</li>
 						<li data-auto-animate-target="3">Apply Python skills to solve real-world problems.</li>
 					</ul>
+					<aside class="notes">
+						Our journey today covers the core of Python programming that’s pivotal in optimizing fleet operations. We aim to not just understand Python’s data structures and functional programming but to master their application in real-world scenarios, enhancing our fleet’s efficiency and environmental friendliness.
+					</aside>
 				</section>
 
 				<!-- Slide 3: Engagement Poll -->
@@ -50,6 +56,9 @@
 						<!-- QR Code Image for Slido Poll -->
 						<img src="assets/qr_poll.png" alt="QR Code" style="margin-top: 20px; width: 200px; height: 200px;">
 					</div>
+					<aside class="notes">
+						Let’s begin with a quick pulse check on our collective knowledge. Please participate in our interactive poll to share how familiar you are with Python’s data structures and functional programming. This will help tailor our session to better suit your learning needs.
+					</aside>
 				</section>
 				
 
@@ -68,6 +77,9 @@
 						</ul>
 					</div>
 					<div style="background-image: url('assets/eco_drones.webp'); background-size: cover; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 0;"></div>
+					<aside class="notes">
+						Fleet management, especially in the context of EcoDeliver, is more than logistics—it’s about sustainability and efficiency. Python offers us the tools—tuples, sets, dictionaries—to manage complex data and operations seamlessly. Let’s dive into how these tools can be effectively utilized in fleet management.
+					</aside>
 				</section>
 				
 				<!-- Slide 5: Tuples, Sets and dictionary -->
@@ -89,6 +101,13 @@
 					example_set = {1, 2, 3, 4, 5}
 							</code></pre>
 						</div>
+						<aside class="notes">
+							First, let’s talk about tuples. Their immutability is a key feature for storing static information about our drones, such as IDs and base locations. Why immutability, you ask? It ensures the integrity of our data, preventing unintended changes. Let’s switch to our live coding session to see tuples in action.
+							Live Coding Transition: Demonstrate creating and using tuples with drone data.
+
+							Moving on to sets, their uniqueness property plays a crucial role in managing delivery locations. Sets help us avoid redundant operations by ensuring each location is only considered once. Now, let’s transition to a live coding demo to illustrate how sets efficiently handle unique delivery locations.
+							Live Coding Transition: Show how to use sets to manage and manipulate unique delivery locations.
+						</aside>
 					</section>
 
 					<section data-auto-animate>
@@ -104,6 +123,10 @@
 						<div class="fragment" data-fragment-index="4">
 							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
 						</div>
+						<aside class="notes">
+							Dictionaries are our third tool, offering quick lookups and updates for drone assignments. They map drone IDs to delivery details, optimizing our dispatch process. Let’s dive into a live coding example to demonstrate the dynamic capabilities of dictionaries in fleet management.
+							Live Coding Transition: Create and manipulate a dictionary mapping drones to deliveries.
+						</aside>
 					</section>
 				</section>
 				
@@ -122,6 +145,10 @@
 				print(squared)
 						</code></pre>
 						<p class="fragment"><strong>Expected Output:</strong> [1, 4, 9, 16]</p>
+						<aside class="notes">
+							Functional programming enhances our data handling through pure functions and immutable data. The map function, for instance, applies a transformation across all items in a collection, ideal for calculating delivery times. Let’s see this in practice in our next live coding session.
+							Live Coding Transition: Use map to transform drone delivery data.
+						</aside>
 					</section>
 					
 					<!-- Filter Function -->
@@ -137,6 +164,10 @@
 				print(even)
 						</code></pre>
 						<p class="fragment"><strong>Expected Output:</strong> [2, 4, 6]</p>
+						<aside class="notes">
+							The filter function allows us to sift through our data, selecting items that meet specific criteria, such as battery level or availability. This is particularly useful in preparing data for machine learning models. Let’s move to a live demo to see filter in action.
+							Live Coding Transition: Demonstrate filtering drone data based on specific criteria.
+						</aside>
 					</section>
 
 					<!-- Reduce Function -->
@@ -156,20 +187,20 @@
 						<div class="fragment">
 							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
 						</div>
+						<aside class="notes">
+							Lastly, reduce is a powerful tool for aggregating data, turning collections into single values, like the total distance covered by drones. This aggregation is crucial for analysis and decision-making. Let’s explore reduce with a live coding example.
+							Live Coding Transition: Show how to use reduce to aggregate delivery data.
+						</aside>
 					</section>
-
-
-					<div class="fragment" data-fragment-index="4">
-							<p>Check out our <a href="your_jupyter_notebook_link_here" target="_blank">live Jupyter notebook</a> for more examples.</p>
-						</div>
 				</section>
 
 				<!-- Slide 7: Route Optimization Challenge -->
 				<section>
-					<section>
-						<h2>Comprehensive Challenge: Optimizing Delivery Routes</h2>
-						<p>Integrate all learned concepts to optimize delivery routes for our drone fleet.</p>
-					</section>
+					<h2>Comprehensive Challenge: Optimizing Delivery Routes</h2>
+					<p>Integrate all learned concepts to optimize delivery routes for our drone fleet.</p>
+					<aside class="notes">
+						Now, combining these concepts, we’ll tackle a route optimization challenge, applying our knowledge to enhance fleet efficiency. This hands-on challenge will consolidate our learning, emphasizing the practical application of Python in fleet management.
+					</aside>
 				</section>
 
 				<!-- Slide 8: Conclusion -->
@@ -180,6 +211,9 @@
 						<li class="fragment">Functional programming.</li>
 						<li class="fragment">Real-world application.</li>
 					</ul>
+					<aside class="notes">
+						In conclusion, Python’s data structures and functional programming are indispensable in optimizing fleet management. Through today’s lecture and live coding sessions, we’ve seen how these tools not only enhance efficiency but also support sustainability.
+					</aside>
 				</section>
 				
 
@@ -197,6 +231,9 @@
 					<p>Your feedback is highly appreciated.</p>
 					<p>Contact me at <a href="mailto:jonathan.k.sullivan@gmail.com">Jonathan.K.Sullivan@gmail.com</a></p>
 					<small>Follow me on <a src="https://linkedin.com/in/jonathanksullivan">Linkedin</a></small>
+					<aside class="notes">
+					I invite now any questions you may have. This is a great opportunity to deepen our discussion on any of the topics we’ve covered. Your engagement and curiosity are what make these sessions truly enriching. Thank you for your participation and enthusiasm.
+					</aside>
 				</section>
 			</div>
 		</div>
